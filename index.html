@@ -1,120 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="main.css">
-	<link rel="icon" href="/logo/ChatGPT Image 8 de abr. de 2025, 19_36_46.png" type="icon">
-	<title>Portifólio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" href="/logo/ChatGPT Image 8 de abr. de 2025, 19_36_46.png" type="image/png">
+  <title>Portifólio</title>
 </head>
 <body>
 
-	<header>
-		<div class="interface">
-			<!--logo-->
-		</div>
-		<!--interface-->
-		<nav class="navegação">
-			<ul class="menu">
-				<li>
-					<a href="#inicio" class="menu-link hover-underline-animation right">Inicio</a>
-				</li>
-				<li>
-					<a href="#sobre" class="menu-link hover-underline-animation right">Sobre</a>
-				</li>
-				<li>
-					<a href="#projetos" class="menu-link hover-underline-animation right">Projeto</a>
-				</li>
-				<li>
-					<a href="#contatos" class="menu-link hover-underline-animation right">Contato</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<main id="inicio" class="cabeça">
-		<div>
-			<center>
-				<img src="/logo/marcos.jpg	" alt="logo" class="fotinha">
-				<h1 class="type-effect">Marcos Dione</h1>
-				<p class="paraf">Desenvolvedor Front-End</p>
-			</center>
-			<br>
-			<br>
-			<h2>Tecnologias</h2>
-			<div class="tecnologias">				
-				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="50" height="50" alt="HTML5">
-				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="50" height="50" alt="CSS3">
-				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="50" height="50" alt="JavaScript/">
-			</div>
-		</div>
-	</main>
-	<section id="sobre" class="sobre">
-		<h2 class="Sobre-Titulo">Sobre Mim</h2>
-		<div class="card-sobre">
-			<p class="desc-sobre">
-				Olá! Meu nome é Marcos e sou um desenvolvedor Frontend iniciante, apaixonado por tecnologia e design. 
-				<br>
-				Adoro transformar ideias em interfaces bonitas e funcionais, utilizando HTML, CSS e JavaScript.
-				Estou sempre aprendendo novas tecnologias e aprimorando minhas habilidades para criar experiências interativas e responsivas. 
-				<br>
-				Estou animado para crescer na área e contribuir com projetos inovadores!
-			</p>
-		</div>
-	</section>
-	<br>
-	<br>
-	<br>
-	<section id="projetos" class="projetos">
-		<h2 class="projetos-titulo">Meus Projetos</h2>
-		<div class="projetos-caixa">
-			<!--Começo dos projetos-->
-			<div class="projetos-card">
-				<a href="https://dailydevs.org" target="_blank">
-					<img src="/empresas/logo.png" alt="Portifólio" class="imagem-projeto">
-					<div class="caixa-textos-projeto">
-						<h3 class="info-projetos">Daily Devs</h3>
-						<p class="paraf-projetos">Aprenda Programação de Forma Cooperativa
-						Junte-se ao Daily Devs e evolua suas habilidades de desenvolvimento em comunidade</p>
-					</div>
-				</a>
-			</div>
-			<div class="projetos-card">
-				<img src="/empresas/Salobro-logo.jpg" alt="salobro" class="imagem-projeto">
-				<div class="caixa-textos-projeto">
-					<h3 class="info-projetos">Salobro Contabilidade</h3>
-					<p class="paraf-projetos">Projeto ainda em desenvolvimento</p>
-				</div>
-			</div>
-			<div class="projetos-card">
-				<img src="/empresas/visual.jpg" alt="visual" class="imagem-projeto">
-				<div class="caixa-textos-projeto">
-					<h3 class="info-projetos">VisualTune</h3>
-					<p class="paraf-projetos">Projeto ainda em desenvolvimento</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<br>
-	<!--Fim dos projetos-->
-	<!--Começo dos contatos-->
-	<section id="contatos" class="Contatos">
-		<h2 class="Contatos-titulo" >Entre em contato!</h2>
-		<div class="links-redes">
-			<a href="https://wa.me/5574999130737" target="_blank" 
-			button type="submit" class="whatsapp">Enviar no Whatsapp</button> 
+  <header>
+    <div class="interface">
+      <!--logo-->
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()">
+          <img class="icon" src="assets/componentes/menu.svg" alt="Menu">
+        </button>
+      </div>
+    </div>
+    <nav class="navegação">
+      <div class="menu-principal">
+        <ul class="menu">
+          <li><a href="#inicio" class="menu-link hover-underline-animation right">Inicio</a></li>
+          <li><a href="#sobre" class="menu-link hover-underline-animation right">Sobre</a></li>
+          <li><a href="#projetos" class="menu-link hover-underline-animation right">Projeto</a></li>
+          <li><a href="#contatos" class="menu-link hover-underline-animation right">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
 
-				<a href="https://github.com/Marcz-dev" target="_blank" class="social-icon">
-					<img src="/redes/25231.png" alt="icon-GitHub" style="width: 40px;">
-				</a>
-				<a href="https://www.instagram.com/sm_marcz/" target="_blank" class="social-icon">
-					<img src="/redes/instagram.png" alt="icons8-instagram" style="width: 40px;">
-				</a>
-			</div>
+    <nav class="menu-mobile">
+      <ul>
+        <li><a href="#inicio" class="menu-link hover-underline-animation right">Inicio</a></li>
+        <li><a href="#sobre" class="menu-link hover-underline-animation right">Sobre</a></li>
+        <li><a href="#projetos" class="menu-link hover-underline-animation right">Projeto</a></li>
+        <li><a href="#contatos" class="menu-link hover-underline-animation right">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-		</form>
-	</section>
-	<footer>
-		@2025 - Todos os direitos reservados. <br>
-	</footer>
+  <main id="inicio" class="cabeça">
+    <div>
+      <center>
+        <img src="assets/logo/marcos.jpg" alt="logo" class="fotinha">
+        <h1 class="type-effect">Marcos Dione</h1>
+        <p class="paraf">Desenvolvedor Front-End</p>
+      </center>
+      <br><br>
+      <h2>Tecnologias</h2>
+      <div class="tecnologias">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="50" height="50" alt="HTML5">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="50" height="50" alt="CSS3">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="50" height="50" alt="JavaScript">
+      </div>
+    </div>
+  </main>
+
+  <section id="sobre" class="sobre">
+    <h2 class="Sobre-Titulo">Sobre Mim</h2>
+    <div class="card-sobre">
+      <p class="desc-sobre">
+        Olá! Meu nome é Marcos e sou um desenvolvedor Frontend iniciante, apaixonado por tecnologia e design. <br>
+        Adoro transformar ideias em interfaces bonitas e funcionais, utilizando HTML, CSS e JavaScript.
+        Estou sempre aprendendo novas tecnologias e aprimorando minhas habilidades para criar experiências interativas e responsivas. <br>
+        Estou animado para crescer na área e contribuir com projetos inovadores!
+      </p>
+    </div>
+  </section>
+
+  <section id="projetos" class="projetos">
+    <h2 class="projetos-titulo">Meus Projetos</h2>
+    <div class="projetos-caixa">
+      <div class="projetos-card">
+        <a href="https://dailydevs.org" target="_blank">
+          <img src="assets/empresas/logo.png" alt="Portifólio" class="imagem-projeto">
+          <div class="caixa-textos-projeto">
+            <h3 class="info-projetos">Daily Devs</h3>
+            <p class="paraf-projetos">Aprenda Programação de Forma Cooperativa. Junte-se ao Daily Devs e evolua suas habilidades de desenvolvimento em comunidade</p>
+          </div>
+        </a>
+      </div>
+      <div class="projetos-card">
+        <img src="assets/empresas/Salobro-logo.jpg" alt="salobro" class="imagem-projeto">
+        <div class="caixa-textos-projeto">
+          <h3 class="info-projetos">Salobro Contabilidade</h3>
+          <p class="paraf-projetos">Projeto ainda em desenvolvimento</p>
+        </div>
+      </div>
+      <div class="projetos-card">
+        <img src="/assets/empresas/visual.jpg" alt="visual" class="imagem-projeto">
+        <div class="caixa-textos-projeto">
+          <h3 class="info-projetos">VisualTune</h3>
+          <p class="paraf-projetos">Projeto ainda em desenvolvimento</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contatos" class="Contatos">
+    <h2 class="Contatos-titulo">Entre em contato!</h2>
+    <div class="links-redes">
+      <a href="https://wa.me/5574999130737" target="_blank" class="whatsapp">Enviar no Whatsapp</a>
+      <a href="https://github.com/Marcz-dev" target="_blank" class="social-icon">
+        <img src="assets/redes/25231.png" alt="icon-GitHub" style="width: 40px;">
+      </a>
+      <a href="https://www.instagram.com/sm_marcz/" target="_blank" class="social-icon">
+        <img src="assets/redes/instagram.png" alt="icons8-instagram" style="width: 40px;">
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    @2025 - Todos os direitos reservados.
+  </footer>
+
+  <script src="main.js"></script>
+
 </body>
 </html>
