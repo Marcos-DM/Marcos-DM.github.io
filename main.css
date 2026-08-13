@@ -1,4 +1,17 @@
 /* Reset e base geral */
+
+:root {
+    --background: #09090F;
+    --background-secundario: #0F0F17;
+    --card: #14141D;
+    --borda: #292936;
+    --textos: #F5F5F7;
+    --text-secundarios: #A4A4B5;
+    --primary: #8B5CF6;
+    --primary-hover: #A78BFA;
+    --primary-dark: #6D28D9;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +20,8 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #0f0f0f;
-  color: #f5f5f5;
+  background-color: var(--background);
+  color: var(--textos);
   line-height: 1.6;
 }
 
@@ -24,12 +37,24 @@ a {
 
 /* Header */
 header {
-  background: #111;
+  background: var(--background-secundario);
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
+
+main{
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  text-align: center;
+}
+
+
 
 .interface {
   display: flex;
@@ -79,7 +104,6 @@ header {
   align-items: center;
   justify-content: center;
   height: 90vh;
-  background: linear-gradient(135deg, #1f1f1f, #141414);
   text-align: center;
 }
 
@@ -104,13 +128,13 @@ h1 {
 /* Seção Sobre */
 .sobre {
   padding: 4rem 2rem;
-  background-color: #1a1a1a;
+  background-color: var(--background-secundario);
 }
 
 .Sobre-Titulo {
   font-size: 2.2rem;
   text-align: center;
-  color: #00ffee;
+  color: var(--primary-dark);
   margin-bottom: 2rem;
   position: relative;
 }
@@ -119,7 +143,7 @@ h1 {
   content: "";
   width: 60px;
   height: 3px;
-  background: #00ffee;
+  background: var(--primary-dark);
   display: block;
   margin: 8px auto 0;
   border-radius: 4px;
@@ -128,11 +152,11 @@ h1 {
 .card-sobre {
   max-width: 800px;
   margin: 0 auto;
-  background-color: #1e1e1e;
+  background-color: var(--background-secundario);
   padding: 2.5rem;
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-  color: #e0e0e0;
+  color: var(--textos);
   line-height: 1.8;
   font-size: 1.05rem;
   transition: transform 0.3s ease;
@@ -161,10 +185,10 @@ h1 {
 }
 
 .projetos-card {
-  background-color: #1f1f1f;
+  background-color: var(--card);
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -175,19 +199,20 @@ h1 {
 
 .caixa-textos-projeto {
   text-align: center;
-  padding: 1.5rem;
+  padding: 1.0rem;
 }
 
 .caixa-textos-projeto p {
   font-size: 0.95rem;
-  color: #ccc;
+  color: #cccccce8;
 }
 
 .imagem-projeto {
   width: 100%;
   height: 180px;
   object-fit: contain;
-  margin: 3px;
+  margin: 1px;
+  padding-top: 10px;
 }
 
 /* Seção Contatos */
@@ -200,6 +225,7 @@ h1 {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 2rem;
+  padding-bottom: 6px;
 }
 
 .whatsapp {
@@ -210,7 +236,7 @@ h1 {
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.6s ease;
 }
 
 .whatsapp:hover {
